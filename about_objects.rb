@@ -22,7 +22,9 @@ class AboutObjects < Neo::Koan
 
   def test_every_object_has_an_id
     obj = Object.new
-    assert_equal __, obj.object_id.class
+    # Fixnum holds Integer values
+    # obj.object_id returns an Integer of the class Fixnum
+    assert_equal Fixnum, obj.object_id.class
   end
 
   def test_every_object_has_different_id
