@@ -35,6 +35,10 @@ class AboutNil < Neo::Koan
     # or
     #    obj == nil
     # Why?
+
+    # ANSWER:
+    # Both seem to do the same
+    # obj.nil? appears more rubyesque
   end
 
 end
