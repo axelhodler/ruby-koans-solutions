@@ -61,7 +61,7 @@ class AboutHashes < Neo::Koan
     assert_equal 2, hash.keys.size
     assert_equal true, hash.keys.include?(:one)
     assert_equal true, hash.keys.include?(:two)
-    # not Symbol
+    # not Symbol because its the plural keyS
     assert_equal Array, hash.keys.class
   end
 
